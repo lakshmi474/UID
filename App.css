@@ -1,0 +1,116 @@
+/* Background for whole app */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container card */
+.counter-container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  text-align: center;
+  width: 360px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.counter-container:hover {
+  transform: translateY(-6px);
+}
+
+/* Title */
+.title {
+  margin-bottom: 10px;
+  font-size: 26px;
+  background: -webkit-linear-gradient(#667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Count display */
+.count-display {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+.count-display:hover {
+  transform: scale(1.2);
+}
+
+/* Progress bar */
+.progress-bar {
+  background: #eee;
+  border-radius: 10px;
+  height: 12px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.progress-fill {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+.progress-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Step control */
+.step-control {
+  margin: 15px 0;
+}
+.step-control input {
+  width: 70px;
+  padding: 6px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.increment {
+  background: #28a745;
+}
+.increment:hover {
+  background: #218838;
+}
+
+.decrement {
+  background: #dc3545;
+}
+.decrement:hover {
+  background: #a71d2a;
+}
+
+.reset {
+  background: #6c757d;
+}
+.reset:hover {
+  background: #565e64;
+}
